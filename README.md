@@ -4,13 +4,20 @@
 SDG 3: Good Health and Well-being
 
 ## 💡 Project
-This is a basic healthcare web app built using Flask.
+AI-based healthcare risk prediction system.
 
 ## ⚙️ Tech Stack
-- Python (Flask)
-- Git
-- GitHub
+- Flask
+- React
+- Docker
+- GitHub Actions
 
-## 🚀 Run Project
+## 🚀 Features
+- Predict health risk
+- Web interface
+- DevOps pipeline ready
+
+## ▶ Run Backend
+cd backend
 pip install -r requirements.txt
 python app.py
