@@ -1,16 +1,5 @@
-from flask import Flask, jsonify
-from model import predict_risk
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Healthcare DevOps Backend Running 🚀"
-
-@app.route('/predict', methods=['GET'])
-def predict():
-    result = predict_risk()
-    return jsonify({"risk": result})
+import os
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
