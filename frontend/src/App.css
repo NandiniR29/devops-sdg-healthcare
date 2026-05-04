@@ -1,27 +1,79 @@
-.container {
-  text-align: center;
-  margin-top: 100px;
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: Arial;
 }
 
-input {
-  display: block;
-  margin: 10px auto;
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.input-group input {
+  width: 100%;
   padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 button {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
 }
 
+.reset {
+  background: #6c757d;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 .low {
+  background: #d4edda;
   color: green;
 }
 
 .medium {
+  background: #fff3cd;
   color: orange;
 }
 
 .high {
+  background: #f8d7da;
   color: red;
+}
+
+.risk-bar {
+  height: 10px;
+  margin-top: 10px;
+}
+
+.low { border-left: 5px solid green; }
+.medium { border-left: 5px solid orange; }
+.high { border-left: 5px solid red; }
+
+.history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.history ul {
+  padding-left: 20px;
 }
